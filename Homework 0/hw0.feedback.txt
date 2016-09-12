@@ -1,0 +1,72 @@
+13 pts
+
+Chris,
+
+- You did not povide enough evidence to prove that you have ALL the necessary
+  setup for python.
+
+- You showed a nice proof that you have a GitHub account and that you added me as a
+  collaborator.
+
+- You provided a nice proof that you created a Kaggle account.
+
+About the problems:
+1. 
+You have the correct answer and a good explanation.
+
+2. 
+You have a correct answer and a good explanation.
+
+3.(a)
+You have a very good explanation.
+
+3.(b)
+You have an incorrect answer, the rank is 2.
+You did not provide Python code to support your answer.
+
+4. Gaussian
+The answer you provided is not complete. -1pt
+
+4. Multivariate Gaussian
+The answer you provided is not complete. -1pt
+
+4. Bernoulli
+The formula you provided is correct.
+
+4. Binomial
+You provided the correct binomial distribution equation.
+
+4. Exponential
+The formula you provided is correct.
+
+6.
+You did not provide an answer. -1pt
+
+7.(a)
+You did not provide an answer. -1pt
+
+7.(b)
+The picture you provided is not the best, but it is legible nonetheless.
+
+8.(a)
+You did not provide an answer. -1pt
+
+8.(b)
+You did not provide an answer. -1pt
+
+8.(c)
+You did not provide an answer. 
+
+8.(d)
+You did not provide an answer. 
+
+Overall a barely acceptable work:
+- No python to support your answers -2pts
+- No $\LaTeX$
+- Poor presentation of the work, not typed. Terrible for college level. -1pt
+- No cover page.
+
+
+Peace,
+
+- Dr. Pablo Rivas
