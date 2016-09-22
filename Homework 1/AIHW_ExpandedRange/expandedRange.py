@@ -12,9 +12,8 @@ class Perceptron:
 
     def __init__(self, N):
         # Random linearly separated data
-        xA, yA, xB, yB, xC, yC,xD, yD, xE, yE, xF, yF = [random.seed(0) for i in range(12)]
-        self.V = np.array([(xB * yA - xA * yB), (yB - yA), (xA - xB), (xC * yD - xD * yC), (yC - yD),(xD - xC),
-                           (xF * yE - xE * yF), (yF - yE), (xE -xF),0,1])
+
+        self.V = np.array(np.random.rand(11)*2)-1
         self.X = self.generate_points(N)
 
     def generate_points(self, N):
@@ -129,9 +128,10 @@ class Perceptron:
 
 def main(self):
     testing = None
-    for x in range(0, 1):
+    for x in range(0, 100):
 
-        p = Perceptron(100)
+        p = Perceptron(1000)
+
         it = p.pla(save=False)
         testing = p.hist()
 
