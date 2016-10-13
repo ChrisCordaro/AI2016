@@ -169,7 +169,8 @@ def main():
     it = np.zeros(1)
     for x in range(0, 1):
         p = Perceptron(7291)
-        it[x] = p.pla(save=True, line=True)
+        #switch line to True to start perceptron at linereg line
+        it[x] = p.pla(save=True, line=False)
         print it
 
         # n, bins, patches = plt.hist(it, 50, normed=1, facecolor='green', alpha=0.75)

@@ -56,7 +56,7 @@ class Perceptron:
         plt.ylim(-10, 10)
         l = np.linspace(-1.5, 2.5)
         V = self.linRegW
-        #plt.plot(V)
+        plt.plot(V)
         a, b = -V[1] / V[2], -V[0] / V[2]
         plt.plot(l, a * l + b, 'k-')
         cols = {1: 'r', -1: 'b'}
@@ -85,14 +85,13 @@ class Perceptron:
             pts = self.X
         M = len(pts)
         n_mispts = 0
-        # myErr = 0
+
         for x, s in pts:
-            # myErr += abs(s - int(np.sign(vec.T.dot(x))))
+
             if int(np.sign(vec.T.dot(x))) != s:
                 n_mispts += 1
         error = n_mispts / float(M)
-        # print error
-        # print myErr
+
         return error
 
     def choose_miscl_point(self, vec):
@@ -117,7 +116,7 @@ class Perceptron:
         pocketError = []
         # Reassign variables
         X, N = self.X, len(self.X)
-        # Initialize convergence and iteration counters
+
         count = 0
         it = 0
         # Iterate until all points are correctly classified
@@ -127,7 +126,7 @@ class Perceptron:
             x, y = self.choose_miscl_point(w0)
             # Update weights
             w0 += y * x
-            # Update if new weights are better
+            # Only update if the new line weight is better
             pocketError.append(self.classification_error(w0))
             bestW.append(self.classification_error(w))
             if self.classification_error(w) > self.classification_error(w0):
@@ -135,10 +134,10 @@ class Perceptron:
                 count = 0
             else:
                 count += 1
-            # Converge after 500 iterations with the same wieghts
+            # break after 500 iterations with the same wieghts
             if count > 500:
                 break
-            # Converge after 30 iterations overall
+            # breakafter 30 iterations overall
             if it > 30:
                 break
             if save:
