@@ -18,6 +18,6 @@ def mid_quest_two(N, vc, delta, ep):
 
 def main():
 
-    x = mid_quest_two(1000, 10, .05, .05)
+    x = mid_quest_two(1000000, 10, .05, .05)
     print "answer after 5 " + str(x)
 main()
